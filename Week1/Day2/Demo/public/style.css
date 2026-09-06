@@ -1,0 +1,25 @@
+body{
+    background-color: lightblue;
+}
+
+.container {
+    text-align: center;
+    width: 250px;
+
+}
+form{
+    text-align: left;
+}
+label {
+    margin: 5px;
+}
+
+input{
+    margin: 5px;
+
+}
+
+#button{
+    height: 20px;
+    width: 50px;
+}

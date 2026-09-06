@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeJS - File Server</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <p>Hello, this is my dog</p>
+        <img id="dogImage" src="url.txt" alt="" width="">
+        <p>He is an American eskimo</p>
+
+        <script>
+            fetch("url.txt")
+                .then(response => response.text())
+                .then(url => {
+                    document.getElementById("dogImage").src = url.trim();
+                });
+        </script>
+    </div>
+
+    <link rel="stylesheet" href="server.js">
+</body>
+</html>
