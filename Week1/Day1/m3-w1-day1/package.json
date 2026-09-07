@@ -1,0 +1,14 @@
+{
+  "name": "node-http",
+  "version": "1.0.0",
+  "description": "Node HTTP Module",
+  "license": "ISC",
+  "author": "Chris Aguilar",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "git repository, keywords",
+    "start": "node server"
+  }
+
+}
