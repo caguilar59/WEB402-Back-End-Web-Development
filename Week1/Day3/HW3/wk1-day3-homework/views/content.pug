@@ -1,0 +1,16 @@
+doctype html
+html(lang='en')
+  include includes/head.pug
+  body
+    aside#leftside
+    aside#rightside
+    #container
+      include includes/header.pug
+      main
+        aside#photos
+          img(src='/images/chili.jpg', alt='White Chicken Chili', width='180')
+        h2
+          blogtitle
+        include includes/blog-posts.pug
+      include includes/footer.pug
+    script(src='/js/vue.js')

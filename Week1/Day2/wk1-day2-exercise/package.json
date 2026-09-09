@@ -1,0 +1,20 @@
+{
+  "name": "express-exercise",
+  "version": "1.0.0",
+  "description": "Week 1 Day 2 Express.js exercises",
+  "main": "exp_demo1.js",
+  "scripts": {
+    "demo1": "node exp_demo1.js",
+    "demo2": "node exp_demo2.js",
+    "demo3": "node exp_demo3b.js",
+    "demo4": "node exp_demo4.js",
+    "demo5": "node exp_demo5.js",
+    "demo6": "node exp_demo6.js",
+    "demo7": "node exp_demo7.js",
+    "demo8": "node exp_demo8.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
