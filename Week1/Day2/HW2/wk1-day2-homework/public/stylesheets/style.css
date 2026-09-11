@@ -1,0 +1,25 @@
+* { font-family: Arial, Helvetica, sans-serif; box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+#leftside { float: left; width: 30%; min-height: 1450px; background-color: rgb(77, 192, 154); }
+#rightside { float: left; width: 70%; min-height: 1450px; background-color: rgb(238, 226, 192); }
+#container { background-color: rgba(255, 255, 255, .85); position: absolute; top: 15%; left: 15%; width: min(1100px, 80%); min-height: 1200px; border-radius: .7em; }
+header { height: 80px; background-color: rgba(231, 229, 229, .5); font-size: 2.75em; padding: .5em; color: rgb(216, 150, 7); }
+header span { font-family: 'Sacramento', cursive; }
+main { position: relative; }
+main h2 { position: absolute; left: 20%; top: 30px; margin: 25px 0 200px 50px; color: rgb(60, 190, 160); text-transform: uppercase; }
+main #photos img { margin: .75em; border: .85em solid white; }
+section#blogposts { position: absolute; left: 20%; top: 70px; padding: 50px; }
+section#blogposts ul { margin: 0; padding: 0; }
+.posts { list-style: none; margin: 25px; padding: 25px; border: 2px solid rgba(83, 78, 58, .6); border-radius: .5em; }
+.profile img { width: 50px; height: 42px; vertical-align: middle; margin-right: 1em; cursor: pointer; }
+.reply { float: right; font-size: .8em; font-weight: bold; }
+.info-box { position: fixed; top: 25%; left: 35%; width: min(360px, 70vw); padding: 2em; color: white; border-radius: 1em; background-color: rgba(0, 0, 0, .9); }
+#info-title { font-size: 2em; font-weight: bolder; margin-bottom: 1em; }
+#info-foodie span, #info-bio span { font-weight: bolder; font-size: 1.15em; }
+#info-foodie, #info-bio { margin-bottom: 1em; }
+.close-btn:hover { cursor: pointer; }
+.close-btn-text { position: absolute; right: 1.5em; top: 0; }
+.close-btn-text:hover { transition: transform ease-in-out .2s; transform: scale(1.5); }
+.close-btn-button { background-color: white; border: none; padding: .45em .8em; }
+footer { position: absolute; bottom: 0; height: 50px; width: 100%; text-align: center; font-size: .85em; }
+@media (max-width: 760px) { #leftside { width: 20%; } #rightside { width: 80%; } #container { left: 5%; top: 3%; width: 90%; min-height: 1350px; } section#blogposts { position: static; padding: 20px 5px; } main h2 { position: static; margin: 20px; } .posts { margin: 12px; } }
