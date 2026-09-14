@@ -17,6 +17,15 @@ var startButton = document.getElementById("startGame")
 startButton.addEventListener("click", startGame);
 
 function startGame() {
+    i = 0;
+    clicks = 0;
+    n = 0;
+    tileIcons = [];
+    tileIds = [];
+    randomOrderArray = [];
+    setRandomTileOrder(12);
+    setTiles();
+
     tiles.forEach(tile => tile.addEventListener("click", displayTile));
     resetTiles();
     startButton.disabled = true;
@@ -47,9 +56,7 @@ creates an array of 12 random numbers*/
 var randomOrderArray = [];
 function setRandomTileOrder(numberOfTiles) {
     while (randomOrderArray.length < numberOfTiles) {
-        var randomNum = Math.random();
-        randomNum = randomNum * (numberOfTiles -1);
-        randomNum = Math.round(randomNum) + 1;
+        var randomNum = Math.floor(Math.random() * numberOfTiles) + 1;
 
         if (randomOrderArray.includes(randomNum)) {
             continue;
@@ -63,7 +70,7 @@ function setRandomTileOrder(numberOfTiles) {
 var tiles = document.querySelectorAll(".gametile");
 
 function setTiles(){
-    for(tile of tiles){
+    for(var tile of tiles){
         tile.innerHTML = randomOrderArray[i];
         i++;
     //replace numerical values with icon pairs
@@ -94,12 +101,14 @@ function setTiles(){
 
 //Timer Function -> starts timer when game is started end when game is compvare or game is cancelled.
 var count;
+var timer;
 
 function startTimer() {
     clearInterval(timer); //clears timer before timer starts. This fixes issue if timer is triggered again, when already running. 
-    count = 0, timer = setInterval(function () {
-        count = count++;
-        document.getElementById("timer").firstChild.innerText = count++;
+    count = 0;
+    timer = setInterval(function () {
+        count++;
+        document.getElementById("timer").firstChild.innerText = count;
 
         //end timer when timer reaches -1, This displays 0.
         if (count === 60) {
@@ -139,9 +148,9 @@ function displayTile(e) {
     this.classList.add("displayTile");
         
     // logs the value of the tile's icon and Id
-    tileIcon = e.target.getAttribute("icon");
+    tileIcon = e.currentTarget.getAttribute("icon");
     tileIcons.push(tileIcon);
-    var tileId = e.target.getAttribute("id");
+    var tileId = e.currentTarget.getAttribute("id");
     tileIds.push(tileId);
    
     // this counts number of clicks
@@ -180,7 +189,7 @@ function checkMatch(tileIcons, tileIds,n){
 
 //countClicks -> calculates number of user clicks -> needed to calculate score
 function countMoves(){
-    clicks = n;
+    clicks++;
     document.getElementById("clicks").firstChild.innerHTML = clicks;
 }
 
@@ -235,13 +244,11 @@ function generateRGBVal() {
 //use api to generate random icon or picture
 
 function resetTiles(){
-    for(tile of tiles){
+    for(var tile of tiles){
         tile.style.backgroundColor ="#44445a";
         tile.removeAttribute("state");
-        tile.classList.remove("hideTile"); 
-        tile.classList.remove("displayTile"); 
-        
+        tile.classList.remove("hideTile");
+        tile.classList.remove("displayTile");
+
     }
 }
-
-
