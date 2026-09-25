@@ -1,0 +1,159 @@
+.listing-reg h1 {
+  text-align: center;
+  margin: 0 0 2rem;
+}
+
+.form-registration {
+  width: min(100%, 275px);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+
+  input {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+
+  .btn {
+    flex: 1 0 100%;
+    width: 100%;
+    color: #fff;
+    background: #daaa0e;
+    border-color: #daaa0e;
+  }
+}
+
+.my-errors {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  color: #333;
+  font-size: 1.2rem;
+  display: table;
+
+  li {
+    margin: 0 0 1rem;
+
+    &::before {
+      content: "! Error : ";
+      color: #f00;
+      font-weight: bold;
+    }
+  }
+}
+
+.listing-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: 1px solid #aaa;
+  background: #fff;
+  color: #222;
+
+  th:first-child,
+  td:first-child {
+    width: 32%;
+  }
+
+  th,
+  td {
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #aaa;
+    text-align: center;
+  }
+
+  th {
+    background: #000;
+    color: #fff;
+  }
+}
+
+.registrants-page {
+  display: block;
+  width: 90%;
+  min-height: 0;
+  margin: 36px auto 0;
+  padding: 0;
+  background: transparent;
+}
+
+.registration-page {
+  width: min(90%, 700px);
+  min-height: 0;
+  padding: 3rem;
+}
+
+.registration-layout {
+  width: 99%;
+  min-height: 480px;
+  padding: 16px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background: #fff;
+}
+
+.registration-brand {
+  min-height: 448px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #d4d5d8;
+  color: #313130;
+  text-align: center;
+
+  span {
+    font-family: 'Sacramento', cursive;
+    font-size: 2em;
+  }
+
+  p {
+    margin: 2rem 0 0;
+  }
+}
+
+.registration-panel {
+  width: 100%;
+  min-height: 448px;
+  padding: 5rem 1rem 2rem;
+  box-sizing: border-box;
+  background: #fff;
+
+  h1 {
+    margin: 0 0 2.5rem;
+    text-align: center;
+    font-size: 1.35rem;
+  }
+}
+
+.thank-you-panel {
+  width: 100%;
+  min-height: 448px;
+  padding: 18px;
+  box-sizing: border-box;
+  background: #fff;
+
+  h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .registration-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .registration-brand {
+    min-height: 220px;
+  }
+
+  .registration-panel {
+    min-height: 380px;
+    padding-top: 3rem;
+  }
+}

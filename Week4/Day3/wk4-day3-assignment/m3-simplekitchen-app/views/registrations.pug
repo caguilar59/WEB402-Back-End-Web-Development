@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  main.registrants-page
+    table.listing-table
+      thead
+        tr
+          th(scope='col') Name
+          th(scope='col') Email
+      tbody
+        if registrations.length
+          each registration in registrations
+            tr
+              td= registration.name
+              td= registration.email
+        else
+          tr
+            td(colspan='2') No registrations yet.
