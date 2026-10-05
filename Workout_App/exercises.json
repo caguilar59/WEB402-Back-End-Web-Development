@@ -1,0 +1,206 @@
+[
+    {
+        "category": "",
+        "name": "",
+        "muscle": [
+            ""
+        ],
+        "equipment": [
+            ""
+        ],
+        "imageUrl":"",
+        "videoUrl":""
+    },
+    {
+        "category": "Legs",
+        "name": "Back Squat",
+        "muscle": [
+            "Quadriceps",
+            "Hamstrings",
+            "Glutes"
+        ],
+        "equipment": [
+            "Barbell",
+            "Dumbbell",
+            "Machine"
+        ],
+        "imageUrl":"",
+        "videoUrl":""
+    },
+    {
+        "category": "Legs",
+        "name": "Box Squat",
+        "muscle": [
+            "Glutes",
+            "Quadriceps",
+            "Hamstrings"
+        ],
+        "equipment": [
+            "Barbell",
+            "Machine"
+        ],
+        "imageUrl":"",
+        "videoUrl":""
+    },
+    {
+        "category": "Legs",
+        "name": "Deadlift",
+        "muscle": [
+            "Hamstrings",
+            "Glutes"
+        ],
+        "equipment": [
+            "Barbell",
+            "Machine",
+            "Trap Bar",
+            "Dumbbell"
+        ],
+        "imageUrl":"",
+        "videoUrl":""
+    },
+    {
+        "category": "Legs",
+        "name": "Sumo Deadlift",
+        "muscle": [
+            "Glutes",
+            "Hamstrings"
+        ],
+        "equipment": [
+            "Barbell",
+            "Dumbbell",
+            "Machine"
+        ],
+        "imageUrl":"",
+        "videoUrl":""
+    },
+    {
+        "category": "Legs",
+        "name": "Front Squat",
+        "muscle": [
+            "Quadriceps",
+            "Hamstrings",
+            "Glutes"
+        ],
+        "equipment": [
+            "Barbell",
+            "Dumbbell",
+            "Machine"
+        ],
+        "imageUrl":"",
+        "videoUrl":""
+    },
+    {
+        "category": "Legs",
+        "name": "Hip Thrust",
+        "muscle": [
+            "Glutes",
+            "Hamstrings"
+        ],
+        "equipment": [
+            "Barbell",
+            "Dumbbell",
+            "Machine"
+        ],
+        "imageUrl":"",
+        "videoUrl":""
+    },
+    {
+        "category": "Legs",
+        "name": "Split Squat",
+        "muscle": [
+            "Quadriceps",
+            "Hamstrings",
+            "Glutes"
+        ],
+        "equipment": [
+            "Barbell",
+            "Dumbbell",
+            "Machine"
+        ],
+        "imageUrl":"",
+        "videoUrl":""
+    },
+    {
+        "category": "Legs",
+        "name": "Hack Squat",
+        "muscle":[
+            "Quadriceps",
+            "Glutes"
+        ],
+        "equipment": [
+            "Machine"
+        ],
+        "imageUrl":"",
+        "videoUrl":""
+    },
+    {
+        "category": "Legs",
+        "name": "Bulgarian Split Squat",
+        "muscle":[
+            "Quadriceps",
+            "Hamstrings",
+            "Glutes"
+        ],
+        "equipment": [
+            "Dumbbell",
+            "Barbell",
+            "Machine"
+        ],
+        "imageUrl":"",
+        "videoUrl":""
+    },
+    {
+        "category": "Shoulders",
+        "name": "Front Raises",
+        "muscle": [
+            "Deltoid"
+        ],
+        "equipment": [
+            "Dumbbell",
+            "Cable Machine"
+        ],
+        "imageUrl":"",
+        "videoUrl":""
+    },
+    {
+        "category": "Shoulders",
+        "name": "Lateral Raises",
+        "muscle": [
+            "Deltoid"
+        ],
+        "equipment": [
+            "Dumbbell",
+            "Cable Machine"
+        ],
+        "imageUrl":"",
+        "videoUrl":""
+    },
+    {
+        "category": "Shoulders",
+        "name": "Military Press",
+        "muscle": [
+            "Deltoid"
+        ],
+        "equipment": [
+            "Dumbbell",
+            "Barbell"
+        ],
+        "imageUrl":"",
+        "videoUrl":""
+    },
+    {
+        "category": "Shoulders",
+        "name": "Upright Row",
+        "muscle": [
+            "Deltoid",
+            "Trapezius"
+        ],
+        "equipment": [
+            "Dumbbell",
+            "Barbell",
+            "Cable Machine"
+        ],
+        "imageUrl":"",
+        "videoUrl":""
+    }
+]

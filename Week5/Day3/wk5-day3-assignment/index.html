@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fresh Food To Go</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Fresh Food To Go</h1>
+    </header>
+    <div id="vue">
+        <h2>Selections</h2>
+        <div class="gallery">
+            <gallery-card
+                v-for="card in selectionCards"
+                :image="card.image"
+                :title="card.title"
+                :description="card.description"
+                :button-label="card.buttonLabel">
+            </gallery-card>
+        </div>
+
+    </div>
+</body>
+</html>
